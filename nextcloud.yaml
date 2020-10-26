@@ -24,7 +24,7 @@ spec:
           volumeMounts:
             - name: nextcloud-storage
               mountPath: /var/www/html
-              subPath: nextcloud
+              subPath: html-data
       volumes:
         - name: nextcloud-storage
           persistentVolumeClaim:
@@ -42,5 +42,4 @@ spec:
     pod-label: nextcloud
   ports:
   - protocol: TCP
-    port: 443
-    targetPort: 80
+    port: 80
