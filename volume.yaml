@@ -9,7 +9,7 @@ spec:
   storageClassName: nextcloud-storage
 #  persistentVolumeReclaimPolicy: Delete - deletes all storage if claim is removed
   capacity:
-    storage: 80Gi
+    storage: 50Gi
   accessModes:
     - ReadWriteOnce
   nodeAffinity:
